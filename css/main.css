@@ -22,11 +22,12 @@ html {
 
 .hand {
   width: 14px;
+  position: absolute;
+
   transform-origin: bottom center;
 }
 
 .hand-hour {
-  position: absolute;
   left: calc(50% - 7px);
   top: calc(50% - 58px);
 
@@ -34,7 +35,6 @@ html {
 }
 
 .hand-minute {
-  position: absolute;
   left: calc(50% - 7px);
   top: calc(50% - 86px);
 
@@ -43,7 +43,8 @@ html {
 
 @keyframes spin {
 
-  0% { transform: rotate(00deg) }
-  100% { transform: rotate(360deg) }
+  0% { transform: rotate(00deg); }
+
+  100% { transform: rotate(360deg); }
 
 }
